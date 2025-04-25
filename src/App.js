@@ -7,12 +7,12 @@ function App() {
           display: 'flex',
           flexDirection: 'column',
           width: '300px',
-          border: '2px solid rgba(0, 123, 255, 0.5)',
           borderRadius: '20px',
           padding: '20px',
+          backgroundColor: '#6DD5ED', // Slightly lighter shade of 56CCF2
         }}
       >
-        <h2 style={{ textAlign: 'center' }}>Login</h2>
+        <h2 style={{ textAlign: 'center', color: '#FFFFFF' }}>Login</h2>
         <input
           type="text"
           placeholder="Username"
@@ -46,12 +46,12 @@ function App() {
         <button
           type="submit"
           style={{
-            padding: '10px',
-            fontSize: '16px',
-            backgroundColor: '#007BFF',
-            color: 'white',
+            padding: '8px', // Reduced size
+            fontSize: '14px', // Reduced size
+            backgroundColor: '#D9D9D9',
+            color: '#FFFFFF',
             border: 'none',
-            borderRadius: '5px',
+            borderRadius: '15px', // Updated radius
             cursor: 'pointer',
           }}
         >
