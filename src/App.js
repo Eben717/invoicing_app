@@ -7,27 +7,28 @@ function App() {
           display: 'flex',
           flexDirection: 'column',
           width: '300px',
-          height: '150px',
+          height: '200px',
           borderRadius: '20px',
           padding: '40px', // Increased padding for more space from sides
-            backgroundColor: '#6DD5ED',
-            fontFamily: 'Inter',
-          }}
-          >
-          <img
-            src="invoicing_app\PCU Logo .jpg"
-            alt="PCU Logo"
-            style={{
+          backgroundColor: '#6DD5ED',
+          fontFamily: 'Inter',
+        }}
+      >
+        <img
+          src="/PCU Logo .jpg"
+          alt="PCU Logo"
+          style={{
             display: 'block',
-            margin: '0 auto 20px auto',
+            margin: '0 auto 15px auto',
             width: '50px', // Adjust width as needed
-            height: 'auto',
-            }}
-          />
-          <input
-            type="text"
-            placeholder="Username"
-            style={{
+            height: '60px', // Slightly increased height
+            borderRadius: '45%', // Made edges rounder
+          }}
+        />
+        <input
+          type="text"
+          placeholder="Username"
+          style={{
             marginBottom: '20px', // Increased margin for proportional spacing
             padding: '10px',
             fontSize: '16px',
