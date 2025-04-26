@@ -15,7 +15,7 @@ function App() {
           }}
           >
           <img
-            src="/path/to/PCU Logo.jpg"
+            src="invoicing_app\PCU Logo .jpg"
             alt="PCU Logo"
             style={{
             display: 'block',
