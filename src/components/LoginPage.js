@@ -1,42 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
+
 
 function LoginPage() {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Add your authentication logic here
+    console.log('Username:', username);
+    console.log('Password:', password);
+  };
+
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', fontFamily: 'Inter' }}>
-      <form className='login-form'>
+    <div className="login-container">
+      <form className="login-form" onSubmit={handleSubmit}>
         <input
           type="text"
           placeholder="Username"
-          style={{
-            marginBottom: '20px',
-            padding: '10px',
-            fontSize: '16px',
-            borderRadius: '20px',
-            backgroundColor: 'white',
-            border: '1px solid #ccc',
-            outline: 'none',
-            color: '#333',
-            fontFamily: 'Inter',
-            '::placeholder': { color: '#aaa' },
-          }}
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+          className="login-input"
         />
         <input
           type="password"
           placeholder="Password"
-          style={{
-            marginBottom: '20px',
-            padding: '10px',
-            fontSize: '16px',
-            borderRadius: '20px',
-            backgroundColor: 'white',
-            border: '1px solid #ccc',
-            outline: 'none',
-            color: '#333',
-            fontFamily: 'Inter',
-            '::placeholder': { color: '#aaa' },
-          }}
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          className="login-input"
         />
-        <button type="submit" className='login-button'>
+        <button type="submit" className="login-button">
           Login
         </button>
       </form>
