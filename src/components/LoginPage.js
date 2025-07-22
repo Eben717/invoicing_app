@@ -3,29 +3,7 @@ import React from 'react';
 function LoginPage() {
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', fontFamily: 'Inter' }}>
-      <form
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          width: '300px',
-          height: '200px',
-          borderRadius: '20px',
-          padding: '40px',
-          backgroundColor: '#6DD5ED',
-          fontFamily: 'Inter',
-        }}
-      >
-        <img
-          src="/PCU_Logo.jpg"
-          alt="PCU Logo"
-          style={{
-            display: 'block',
-            margin: '0 auto 15px auto',
-            width: '50px',
-            height: '60px',
-            borderRadius: '45%',
-          }}
-        />
+      <form className='login-form'>
         <input
           type="text"
           placeholder="Username"
@@ -58,20 +36,7 @@ function LoginPage() {
             '::placeholder': { color: '#aaa' },
           }}
         />
-        <button
-          type="submit"
-          style={{
-            padding: '8px',
-            fontSize: '14px',
-            backgroundColor: '#D9D9D9',
-            color: '#FFFFFF',
-            border: 'none',
-            borderRadius: '15px',
-            cursor: 'pointer',
-            fontFamily: 'Inter',
-            fontWeight: 'bold',
-          }}
-        >
+        <button type="submit" className='login-button'>
           Login
         </button>
       </form>
