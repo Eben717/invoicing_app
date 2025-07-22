@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaFileInvoiceDollar, FaUsers, FaChartBar, FaCog, FaSignOutAlt, FaHome } from 'react-icons/fa';
 
+
 const Sidebar = ({ onNavigate }) => {
     const menuItems = [
         { label: 'Dashboard', icon: <FaHome />, key: 'dashboard' },
@@ -14,7 +15,7 @@ const Sidebar = ({ onNavigate }) => {
     return (
         <aside className="sidebar">
             <div className="sidebar-header">
-                <h2>InvoicingApp</h2>
+                <h2>Invoice App</h2>
             </div>
             <nav className="sidebar-nav">
                 <ul>
