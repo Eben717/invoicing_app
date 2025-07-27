@@ -1,16 +1,13 @@
+// LoginPage.js
 import React, { useState } from 'react';
 
-
-function LoginPage() {
+function LoginPage({ onLogin }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Add your authentication logic here
-    console.log('Username:', username);
-    console.log('Password:', password);
+    onLogin(username, password);
   };
 
   return (
